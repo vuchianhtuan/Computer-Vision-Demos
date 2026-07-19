@@ -1,0 +1,7 @@
+ultralytics==8.4.91
+supervision==0.29.1
+streamlit==1.59.1
+opencv-python
+numpy
+PyYAML
+dill

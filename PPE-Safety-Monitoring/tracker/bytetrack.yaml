@@ -1,0 +1,14 @@
+# Cấu hình ByteTrack (Ultralytics model.track()).
+
+tracker_type: bytetrack      # Loại tracker
+
+# --- Ngưỡng confidence ---
+track_high_thresh: 0.25      # Ngưỡng khớp lần 1 (detection chắc chắn)
+track_low_thresh: 0.05       # Ngưỡng khớp lần 2 (detection yếu, cứu track sắp mất)
+new_track_thresh: 0.65       # Ngưỡng confidence để khởi tạo track mới
+
+# --- Vòng đời & khớp track ---
+track_buffer: 210             # Số frame giữ track đã "mất" trước khi xoá (mặc định 30).
+                             # Tăng cao để track sống sót qua đoạn bị che khuất dài.
+match_thresh: 0.999           # Ngưỡng khớp (IoU) giữa track & detection
+fuse_score: true             # Kết hợp confidence vào ma trận chi phí khi khớp

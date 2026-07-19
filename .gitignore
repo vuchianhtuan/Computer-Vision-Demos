@@ -1,0 +1,11 @@
+# Python
+PPE-Safety-Monitoring/__pycache__/
+PPE-Safety-Monitoring/**/__pycache__/
+*.pyc
+
+# Kiro / Claude
+PPE-Safety-Monitoring/.claude/
+PPE-Safety-Monitoring/CLAUDE.md
+
+# Streamlit config cục bộ
+PPE-Safety-Monitoring/.streamlit/
